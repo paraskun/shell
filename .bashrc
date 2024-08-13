@@ -11,4 +11,5 @@ if [[ -z "$DISPLAY" ]]; then
 fi
 
 export PATH=$PATH:$JAVA_HOME/bin
+export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 
