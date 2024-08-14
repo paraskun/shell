@@ -2,6 +2,14 @@
 padding={x=10, y=10}
 opacity=0.7
 
-[font]
-normal={family="Monaspace Argon Var", style="SemiWide SemiBold"}
+[font.normal]
+family="Monaspace Neon Var"
+style="SemiWide SemiBold"
+
+[font.italic]
+family="Monaspace Radon Var"
+style="SemiWide SemiBold Italic"
+
+[font.bold]
+style="SemiWide ExtraBold"
 
