@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
     url = "https://github.com/mfussenegger/nvim-jdtls"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["obsidian.nvim"] = {
+    loaded = true,
+    path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
+    url = "https://github.com/epwalsh/obsidian.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -133,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["pomo.nvim"] = {
+    loaded = true,
+    path = "/home/mehandes/.local/share/nvim/site/pack/packer/start/pomo.nvim",
+    url = "https://github.com/epwalsh/pomo.nvim"
   },
   ["rose-pine"] = {
     loaded = true,

@@ -19,7 +19,13 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
 
+  use('rcarriga/nvim-notify')
+  use('epwalsh/pomo.nvim')
+  use('epwalsh/obsidian.nvim')
+  use('nvim-lua/plenary.nvim')
+
   use('mfussenegger/nvim-jdtls')
+
   use('hrsh7th/cmp-nvim-lsp')
   use('hrsh7th/cmp-buffer')
   use('hrsh7th/cmp-path')
