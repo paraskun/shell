@@ -1,6 +1,14 @@
+vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format)
+
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+require('lspconfig').clangd.setup{}
+require("lspconfig").tsserver.setup{}
+
 local function get_paths()
   local path = {}
-  local jdtls = "/home/mehandes/.local/share/java/jdtls"
+  local jdtls = "/home/mehandes/.local/share/nvim/mason/packages/jdtls"
 
   path.data_dir = vim.fn.stdpath("cache") .. "/nvim-jdtls"
   path.java_agent = jdtls .. "/lombok.jar"
@@ -34,7 +42,14 @@ local function setup(event)
     },
 
     settings = {
-      java = {}
+      java = {
+        format = {
+          settings = {
+            url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml",
+            profile = "GoogleStyle"
+          }
+        }
+      }
     },
 
     root_dir = vim.fs.root(0, {".git"}),

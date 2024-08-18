@@ -2,7 +2,7 @@ require("obsidian").setup({
   workspaces = {
     {
       name = "notes",
-      path = "~/notes"
+      path = "~/Documents/notes"
     }
   },
 
@@ -12,6 +12,10 @@ require("obsidian").setup({
 
   picker = {
     name = "telescope.nvim"
+  },
+
+  ui = {
+    enable = false
   }
 })
 
