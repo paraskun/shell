@@ -1,0 +1,20 @@
+@import "theme.css";
+
+* {
+  font-family: "Monaspace Argon Var";
+  font-weight: 500;
+}
+
+window#waybar {
+  color: @text;
+  background-color: transparent;
+}
+
+#workspaces {
+  margin-left: 20px;
+}
+
+#workspaces button {
+  color: @text;
+}
+
