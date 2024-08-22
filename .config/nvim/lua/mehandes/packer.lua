@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
 	use("ThePrimeagen/harpoon")
 	use("mbbill/undotree")
 
-  -- LSP
+  -- Language Support
 
   use("mfussenegger/nvim-jdtls")
   use("neovim/nvim-lspconfig")
@@ -25,6 +25,8 @@ return require("packer").startup(function(use)
   use("williamboman/mason-lspconfig.nvim")
 
   -- Completion
+  
+  use("danymat/neogen") 
 
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/cmp-buffer")
