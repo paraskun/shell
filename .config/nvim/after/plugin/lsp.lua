@@ -4,7 +4,7 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 require('lspconfig').clangd.setup{}
-require("lspconfig").tsserver.setup{}
+require('lspconfig').rust_analyzer.setup{}
 
 local function get_paths()
   local path = {}
