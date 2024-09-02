@@ -1,4 +1,5 @@
 vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>fd", vim.lsp.buf.declaration)
 
 require("mason").setup()
 require("mason-lspconfig").setup()
