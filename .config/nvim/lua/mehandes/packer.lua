@@ -14,8 +14,6 @@ return require("packer").startup(function(use)
   -- Navigation
 
 	use { "nvim-telescope/telescope.nvim", tag = "0.1.8" }
-	use("ThePrimeagen/harpoon")
-	use("mbbill/undotree")
 
   -- Language Support
 
@@ -23,6 +21,7 @@ return require("packer").startup(function(use)
   use("neovim/nvim-lspconfig")
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
+  use("lervag/vimtex")
 
   -- Completion
   
@@ -36,15 +35,9 @@ return require("packer").startup(function(use)
   use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
 
-  -- Integration
-
-	use("tpope/vim-fugitive")
-  use("epwalsh/obsidian.nvim")
-
   -- Other
 
   use("rcarriga/nvim-notify")
-  use("epwalsh/pomo.nvim")
   use("nvim-lua/plenary.nvim")
 end)
 
