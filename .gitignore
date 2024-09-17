@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+!.bashrc
+!.clang-format
+!.walls
+!.config/hypr
+!.config/nvim
+!.config/waybar
+!.config/alacritty
+
+
