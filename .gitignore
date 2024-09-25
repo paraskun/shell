@@ -1,14 +1,14 @@
-*
+/*
 
 !.gitignore
 !.bashrc
 !.clang-format
-!.walls
-!.config/fontconfig
-!.config/hypr
-!.config/nvim
-!.config/waybar
-!.config/alacritty
-!.local/share/applications/poweroff.desktop
-!.local/share/applications/suspend.desktop
+!/.walls
+!/.config
 
+/.config/*
+
+!/.config/hypr
+!/.config/nvim
+!/.config/waybar
+!/.config/alacritty

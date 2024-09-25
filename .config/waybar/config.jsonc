@@ -2,12 +2,13 @@
 {
   "height": 32,
 
-  "modules-left": [ "hyprland/workspaces" ],
+  "modules-left": [ ],
   "modules-center": [ "clock" ],
   "modules-right": [ ],
 
   "clock": {
-    "format-alt": "{:%Y-%m-%d}"
-  },
+    "format": "  {:%H:%M}",
+    "format-alt": "  {:%Y-%m-%d}"
+  }
 }
 
