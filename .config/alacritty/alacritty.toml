@@ -14,11 +14,11 @@ size=13.0
 
 [font.normal]
 family="Monaspace Neon Var"
-style="Medium"
+style="SemiWide Medium"
 
 [font.italic]
 family="Monaspace Radon Var"
-style="Medium Italic"
+style="SemiWide Medium Italic"
 
 [font.bold]
 style="Bold"
