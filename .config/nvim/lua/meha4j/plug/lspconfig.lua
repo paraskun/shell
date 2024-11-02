@@ -6,20 +6,18 @@ return {
   },
 
   config = function()
+    local caps = require("cmp_nvim_lsp").default_capabilities()
+
     require("lspconfig").clangd.setup({
-      capabilities = require("cmp_nvim_lsp").default_capabilities()
+      capabilities = caps
     })
 
     require("lspconfig").gopls.setup({
-      capabilities = require("cmp_nvim_lsp").default_capabilities()
-    })
-
-    require("lspconfig").pylsp.setup({
-      capabilities = require("cmp_nvim_lsp").default_capabilities()
+      capabilities = caps
     })
 
     require("lspconfig").cmake.setup({
-      capabilities = require("cmp_nvim_lsp").default_capabilities()
+      capabilities = caps
     })
 
     vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format)

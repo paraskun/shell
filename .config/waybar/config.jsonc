@@ -2,13 +2,16 @@
 {
   "height": 32,
 
-  "modules-left": [ ],
-  "modules-center": [ "clock" ],
-  "modules-right": [ ],
+  "modules-left": [ "hyprland/window" ],
+  "modules-center": [ "hyprland/workspaces" ],
+  "modules-right": [ "clock" ],
+
+  "hyprland/window": {
+    "format": "{initialTitle}"
+  },
 
   "clock": {
-    "format": "  {:%H:%M}",
-    "format-alt": "  {:%Y-%m-%d}"
-  }
+    "format": "{:%R %a}",
+  },
 }
 
