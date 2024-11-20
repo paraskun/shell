@@ -7,17 +7,13 @@ return {
 
     config = function()
       require("catppuccin").setup({
-        flavour = "auto",
+        flavour = "mocha",
         transparent_background = true,
         no_italic = true,
 
         integrations = {
           cmp = true,
           treesitter = true,
-        },
-
-        styles = {
-          comments = { "italic" },
         },
       })
 
