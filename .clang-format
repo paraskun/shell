@@ -2,13 +2,9 @@ BasedOnStyle: Google
 
 IndentWidth: 2
 ContinuationIndentWidth: 2
-ColumnLimit: 80
+ColumnLimit: 100
 
 AlignAfterOpenBracket: AlwaysBreak
-
-AlignConsecutiveAssignments:
-  Enabled: false
-  AcrossComments: true
 
 AlignConsecutiveBitFields:
   Enabled: true
