@@ -1,0 +1,19 @@
+@use "style/widget/Menu.scss";
+@use "style/theme.scss" as *;
+
+window {
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+}
+
+.window {
+  margin: 6px;
+
+  box-shadow: 0 0 0 2px $maroon, 6px 6px 0 0 $maroon;
+  border-radius: $border-radius;
+
+  background-color: $surface0;
+}
