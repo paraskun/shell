@@ -56,6 +56,7 @@ function SearchEntry() {
           hook(self, App, "window-toggled", (_, win) => {
             if (win.name == "Menu" && win.visible) {
               text.set("")
+              apps.reload()
               
               self.set_text("")
               self.grab_focus()
