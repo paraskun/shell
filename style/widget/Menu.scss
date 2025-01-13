@@ -2,54 +2,51 @@
 @use "../theme.scss" as *;
 
 .menu {
-  min-height: 400px;
-  min-width: 500px;
+  .box {
+    min-height: 400px;
+    min-width: 500px;
 
-  font-weight: 500;
+    font-weight: 500;
 
-  .search-box {
-    min-height: 100px;
+    .search-box {
+      min-height: 100px;
 
-    border: 2px solid $maroon;
-    border-radius: $border-radius;
+      border: 2px solid $maroon;
+      border-radius: $border-radius;
 
-    background-image: url("file:///home/paraskun/Pic/walls/watchtower.jpg");
-    background-size: cover;
-    background-position: center;
-  } > overlay {
-    margin: 0.7rem;
+      background-image: url("file:///home/paraskun/Pic/walls/watchtower.jpg");
+      background-size: cover;
+      background-position: center;
+    } > overlay {
+      margin: 0.7rem;
 
-    entry {
-      margin: 0 0.7rem;
+      entry {
+        margin: 0 0.7rem;
 
-      outline: none;
-      background: none;
+        outline: none;
+        background: none;
+        border: none;
 
-      color: $text;
-
-      border: none;
-    }
-  }
-
-  scrolledwindow {
-    viewport {
-      box {
-        margin: 0.3rem 0.7rem;
+        color: $text;
       }
     }
-  }
 
-  .btn {
-    background: none;
-    border: none;
+    scrolledwindow {
+      viewport {
+        box {
+          margin: 0.3rem 0.7rem;
+        }
+      }
+    }
 
-    color: $text;
+    .btn {
+      background: none;
 
-    border-radius: $border-radius;
-    background-color: $surface1;
+      border: none;
+      border-radius: $border-radius;
+      background-color: $surface1;
 
-    .name {
-
+      color: $text;
     }
   }
 }

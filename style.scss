@@ -1,5 +1,11 @@
 @use "style/widget/Menu.scss";
+@use "style/widget/Bar.scss";
 @use "style/theme.scss" as *;
+
+* {
+  font-family: "RobotoMono Nerd Font Mono";
+  font-weight: 500;
+}
 
 window {
   background-color: transparent;
@@ -9,11 +15,15 @@ button {
   background-color: transparent;
 }
 
-.window {
+.box {
   margin: 6px;
 
   box-shadow: 0 0 0 2px $maroon, 6px 6px 0 0 $maroon;
   border-radius: $border-radius;
 
   background-color: $surface0;
+}
+
+.secondary {
+  font-weight: 400;
 }

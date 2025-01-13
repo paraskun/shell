@@ -1,0 +1,28 @@
+@use "sass:color";
+@use "../theme.scss" as *;
+
+.bar {
+  margin: 0.5rem 1rem;
+
+  .box {
+    min-height: 40px;
+
+    button {
+      margin: 5px;
+
+      border: none;
+      border-radius: $border-radius;
+      background: none;
+
+      color: $maroon;
+      font-size: 20px;
+
+      &:hover {
+        background-color: $maroon;
+        color: $surface0;
+
+        transition: 200ms linear;
+      }
+    }
+  }
+}

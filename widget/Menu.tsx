@@ -19,8 +19,8 @@ function AppButton({ app }) {
         <image iconName={app.iconName} />
 
         <box valign={Gtk.Align.CENTER} vertical>
-          <label cssClasses={["name"]} xalign={0} label={app.name} />
-          <label cssClasses={["desc"]} xalign={0} label={app.description} />
+          <label xalign={0} label={app.name} />
+          <label cssClasses={["secondary"]} xalign={0} label={app.description} />
         </box>
       </box>
     </button>
@@ -77,10 +77,13 @@ export default function Menu() {
       layer={Astal.Layer.OVERLAY}
       keymode={Astal.Keymode.EXCLUSIVE}
       application={App}
-      onKeyPressed={(_, key) => { if (key == Gdk.KEY_Escape) { App.toggle_window("Menu") } }}
+      cssClasses={["menu"]}
+      onKeyPressed={(_, key) => { 
+        if (key == Gdk.KEY_Escape) { App.toggle_window("Menu") } 
+      }}
     >
       <box 
-        cssClasses={["window", "menu"]}
+        cssClasses={["box"]}
         vertical 
         vexpand={false}
       >
