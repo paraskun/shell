@@ -1,6 +1,9 @@
 import { Gtk, App, Astal } from "astal/gtk4"
+import { Variable, bind } from "astal"
 
-function LauncherButton() {
+import Hyprland from "gi://AstalHyprland"
+
+function Launcher() {
   return (
     <button
       onClicked={() => {
@@ -12,7 +15,53 @@ function LauncherButton() {
   )
 }
 
-function SettingsButton() {
+function Workspace({ ws }) {
+  const hypr = Hyprland.get_default()
+  const classes = Variable.derive(
+    [bind(hypr, "focused-workspace"), bind(hypr, "clients")],
+    (fws, _) => {
+      const c = ["workspace"]
+
+      if (ws.id == fws.id) {
+        c.push("active")
+      }
+
+      return c
+    }
+  )
+
+  return (
+    <button 
+      cssClasses={classes()}
+      valign={Gtk.Align.CENTER}
+      halign={Gtk.Align.CENTER}
+      onClicked={() => ws.focus()}
+    />
+  )
+}
+
+function Workspaces() {
+  return (
+    <box 
+      cssClasses={["workspaces"]}
+      spacing={4}
+    >
+      {Array.from({ length: 7 }, (_, i) => i).map((i) => (
+        <Workspace ws={Hyprland.Workspace.dummy(i + 1, null)} />
+      ))}
+    </box>
+  )
+}
+
+function Time() {
+  const time = Variable("").poll(1000, ["date", "+%H:%M"])
+
+  return (
+    <label label={time()}/>
+  )
+}
+
+function Profile() {
   return (
     <button
       onClicked={() => {
@@ -27,7 +76,8 @@ function SettingsButton() {
 function Start() {
   return (
     <box halign={Gtk.Align.START}>
-      <LauncherButton />
+      <Launcher />
+      <Workspaces />
     </box>
   )
 }
@@ -35,6 +85,7 @@ function Start() {
 function Center() {
   return (
     <box>
+      <Time />
     </box>
   )
 }
@@ -42,7 +93,7 @@ function Center() {
 function End() {
   return (
     <box halign={Gtk.Align.END}>
-      <SettingsButton />
+      <Profile />
     </box>
   )
 }

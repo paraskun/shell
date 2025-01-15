@@ -5,7 +5,9 @@
   margin: 0.5rem 1rem;
 
   .box {
-    min-height: 40px;
+    min-height: 2rem;
+
+    color: $text;
 
     button {
       margin: 5px;
@@ -21,8 +23,45 @@
         background-color: $maroon;
         color: $surface0;
 
-        transition: 200ms linear;
+        transition: 300ms linear;
       }
     }
+
+    .workspaces {
+      padding: 0 0.5rem;
+
+      .workspace {
+        border: solid 0.15rem $maroon;
+        border-radius: 50;
+
+        min-width: 0.5rem;
+        min-height: 0.5rem;
+
+        transition: min-width 0.25s ease-out;
+
+        &.active {
+          background-color: $maroon;
+          min-width: 0.8rem
+        }
+      }
+
+      
+    }
+
+    .notification-button {
+      background: none;
+      color: $sapphire;
+
+      &:hover {
+        background: none;
+        color: $yellow;
+      }
+    }
+  }
+
+  .sep {
+    margin: 10px;
+
+    background-color: $overlay0;
   }
 }
