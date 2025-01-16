@@ -31,30 +31,24 @@
       padding: 0 0.5rem;
 
       .workspace {
-        border: solid 0.15rem $maroon;
-        border-radius: 50;
+        border: solid 2px $maroon;
 
-        min-width: 0.5rem;
-        min-height: 0.5rem;
+        min-width: 0.6rem;
+        min-height: 0.6rem;
 
         transition: min-width 0.25s ease-out;
 
         &.active {
           background-color: $maroon;
-          min-width: 0.8rem
+          min-width: 1.5rem;
         }
       }
-
-      
     }
 
-    .notification-button {
-      background: none;
-      color: $sapphire;
-
-      &:hover {
-        background: none;
-        color: $yellow;
+    .audio {
+      .icon {
+        font-size: 2rem;
+        margin: 0 5px;
       }
     }
   }
